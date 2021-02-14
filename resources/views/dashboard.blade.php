@@ -48,7 +48,7 @@
                   <div class="w-full  lg:w-11/12 xl:w-full px-1 bg-white py-5 lg:px-2 lg:py-2 tracking-wide">
                     <div class="flex flex-row lg:justify-start justify-center">
                       <div class="text-gray-700 font-medium text-sm text-center lg:text-left px-2">
-                          Visita terreno
+                          Comentario
                       </div>
                     </div>
                     <div class="font-semibold text-gray-800 text-xl text-center lg:text-left px-2">
