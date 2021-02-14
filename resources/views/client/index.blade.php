@@ -23,7 +23,7 @@
     </div>
     {{-- tabla --}}
     <div class="align-middle bg-white overflow-x-auto shadow-md rounded-lg">
-        <table class="table-auto w-full " >
+        <table class="table-auto w-full text-sm" >
             <thead>
                 <tr>
                     <th class="font-normal px-6 py-3 border-b-2 border-gray-300 text-left text-green-500 tracking-wider">Rut</th>
@@ -36,11 +36,13 @@
                @foreach ($clients as $client)
                <tr class="border-gray-300 border-b-2  hover:bg-gray-200 ">
 
-                <td class="px-6 py-4 whitespace-no-wrap  border-gray-500 text-sm leading-5">
-                    {{$client->rut}}
+                <td class="px-6 py-4 whitespace-no-wrap  border-gray-500 text-xs leading-5">
+                    <a href="{{route('client.show' , ['client' => $client->id])}}">{{$client->rut}}</a>
                 </td>
-                <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5">{{$client->razon_social}}</td>
-                <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5">{{$client->contact_name}} {{$client->contact_phone}}</td>
+                <td class="px-6 py-4 whitespace-no-wrap text-xs leading-5">
+                    <a href="{{route('client.show' , ['client' => $client->id])}}">{{$client->razon_social}}</a>
+                    </td>
+                <td class="px-6 py-4 whitespace-no-wrap text-xs leading-5">{{$client->contact_name}} {{$client->contact_phone}}</td>
 
                 <td class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-500 text-sm leading-5">
                     <a href="{{route('client.show' , ['client' => $client->id])}}" class="px-3 py-1 border-blue-500 border text-blue-500 rounded transition duration-300 hover:bg-blue-700 hover:text-white focus:outline-none">Ver</a>
