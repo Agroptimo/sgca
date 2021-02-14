@@ -43,7 +43,7 @@
                 <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5">{{$client->contact_name}} {{$client->contact_phone}}</td>
 
                 <td class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-500 text-sm leading-5">
-                    <button class="px-3 py-1 border-blue-500 border text-blue-500 rounded transition duration-300 hover:bg-blue-700 hover:text-white focus:outline-none">Ver</button>
+                    <a href="{{route('client.show' , ['client' => $client->id])}}" class="px-3 py-1 border-blue-500 border text-blue-500 rounded transition duration-300 hover:bg-blue-700 hover:text-white focus:outline-none">Ver</a>
                 </td>
             </tr>
                @endforeach
